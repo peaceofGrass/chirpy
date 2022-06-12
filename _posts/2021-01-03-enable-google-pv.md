@@ -9,7 +9,7 @@ tags: [google analytics, pageviews]
 
 This post is to enable Page Views on the [**Chirpy**][chirpy-homepage] theme based blog that you just built. This requires technical knowledge and it's recommended to keep the `google_analytics.pv.*` empty unless you have a good reason. If your website has low traffic, the page views count would discourage you to write more blogs. With that said, let's start with the setup.
 
-## Set up Google Analytics
+## Set up Google Analytics hhahhhhh
 
 ### Create GA account and property
 
