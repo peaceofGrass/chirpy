@@ -120,3 +120,30 @@ Configuration file: D:/project/blog/jekyll-theme-chirpy/peaceofGrass.github.io/_
 `Server address` 의 url을 브라우저에 입력하면 실행되고 있는 블로그를 볼수 있다.
 
 ## 5. github page 로 실행하기...
+로컬에서 잘 돌아가니 github 에서도 잘 돌아갈줄 알았건만
+아래와 같은 문제들이 차례로 발생했다.
+![index 페이지 에러](https://user-images.githubusercontent.com/41880719/169641692-32a1f04e-06ce-4acf-b492-6b95cd015979.png)
+![404 에러](https://aws1.discourse-cdn.com/github/optimized/2X/8/83de8937fa5bfacb4122979ad6903c94361eacc5_2_1035x580.png)
+<br>
+<br>
+이 역시 나중엔 해결이 되었지만 정확히 원리가 무엇인지는 더 알아볼 필요가 있다.
+아래의 방법들도 문제는 해결되었다. github page 가 push 된 후 몇 분 동안의
+딜레이가 존재하므로 정확히 어떤 방법에 의해 해결되었는지 정확히 알수 없다.
+이 땐 딜레이가 그렇게 긴지 몰랐음.
+
+### 1. 프로젝트의 루트 디렉토리에서 .travis.yml 파일 삭제후 commit & push.
+### 2. 프로젝트의 루트 디렉토리에서 `.github\workflows\pages-deploy.yml.hook` 파일의 이름중
+`.hood` suffix 를 제거후 commit & push.
+### 3. git bash 에서 아래 명령을 실행.
+```
+$ git commit --allow-empty -m "Trigger rebuild"
+$ git push
+```
+### 4. 로컬에서 임의의 코드를 수정후 commit & push 했을 때 github 측에서
+`gh-pages` 브랜치가 새로 생성되고 이 브랜치로 배포해야 정상적으로 작동한다.
+![gh-pages 브랜치]({{site.url}}/assets/img/blog/gh-pages-branch.PNG)
+
+> 이 밖에도 자잘한 문제들이 많았지만 주요하게 기억에 남는 것들은 위에서 모두 설명했다.
+{: .prompt-tip }
+
+# -끝-
