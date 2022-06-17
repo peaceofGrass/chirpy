@@ -119,7 +119,7 @@ Configuration file: D:/project/blog/jekyll-theme-chirpy/peaceofGrass.github.io/_
 ```
 `Server address` 의 url을 브라우저에 입력하면 실행되고 있는 블로그를 볼수 있다.
 
-## 5. github page 로 실행하기...
+## 5. github page 로 실행하기
 로컬에서 잘 돌아가니 github 에서도 잘 돌아갈줄 알았건만
 아래와 같은 문제들이 차례로 발생했다.
 ![index 페이지 에러](https://user-images.githubusercontent.com/41880719/169641692-32a1f04e-06ce-4acf-b492-6b95cd015979.png)
@@ -127,7 +127,7 @@ Configuration file: D:/project/blog/jekyll-theme-chirpy/peaceofGrass.github.io/_
 <br>
 <br>
 이 역시 나중엔 해결이 되었지만 정확히 원리가 무엇인지는 더 알아볼 필요가 있다.
-아래의 방법들도 문제는 해결되었다. github page 가 push 된 후 몇 분 동안의
+아래의 방법들로 문제는 해결되었다. github page 가 push 된 후 몇 분 동안의
 딜레이가 존재하므로 정확히 어떤 방법에 의해 해결되었는지 정확히 알수 없다.
 이 땐 딜레이가 그렇게 긴지 몰랐음.
 
