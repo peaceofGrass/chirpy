@@ -28,6 +28,8 @@ This post is to show Markdown syntax rendering on [**Chirpy**](https://github.co
 ---
 <br>
 
+<h2 id="hahaha" style="color:orange;">hahaha</h2>
+
 ## Paragraph
 
 I wandered lonely as a cloud
@@ -41,6 +43,8 @@ A host, of golden daffodils;
 Beside the lake, beneath the trees,
 
 Fluttering and dancing in the breeze.
+
+한글은 어떻게 표현되는지 테스트 해봄.
 
 ## Lists
 
